@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask input with Protype</title>
+    <style>
+        body{
+            font-size:16px;
+        }
+        .d-block{
+            display: block;
+        }
+        .mt-10{
+            margin-top: 2rem;
+        }
+        .mb-10{
+            margin-bottom: 2rem;
+        }
+        .my-10{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .px-10{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <form action="" id="form">
+
+            <div class="d-block mb-10">
+                <label for="reais">Converter para Dolar: </label>
+                <input type="text" id="reais" />
+                <p>Resultado: <span id="result_reais"></span></p>
+            </div>
+
+            <hr>
+
+            <div class="d-block my-10">
+                <label for="usd">Converter para Reais: </label>
+                <input type="text" id="usd" />
+                <p>Resultado: <span id="result_usd"></span></p>
+            </div>
+    
+        </form>
+    </div>
+
+    <script src="./src/utils/index.js"></script>
+    <script src="./src/app.js"></script>
+
+</body>
+</html>
