@@ -3,7 +3,6 @@
 (() => {
 
     function _toMonetary(lang = 'pt-BR', currency = 'BRL', options = {}){
-        console.log('this', this);
         let result = new Intl.NumberFormat(lang, {
             style: 'currency',
             currency: currency,
@@ -15,7 +14,6 @@
     }
 
     Number.prototype.toMonetary = _toMonetary;
-    //String.prototype.toMonetary = _toMonetary;
     
     String.prototype.toNumber = function() {
         return Number(this.replace(/[^0-9-]+/g, ''));
